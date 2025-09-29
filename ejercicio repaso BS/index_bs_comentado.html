@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Repaso Bootstrap</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles_bootstrap.css">
+  
+</head>
+<body>
+<!-- 
+d-flex: Esta es una clase de utilidad de Bootstrap que aplica display: flex al elemento, transformándolo en un contenedor flexible. Esto permite que los elementos dentro de él se comporten según las reglas de Flexbox. 
+
+justify-content-between: Esta clase se aplica a un contenedor flexible y distribuye el espacio entre los elementos hijos. Coloca el primer elemento al inicio del contenedor y el último al final, con el mayor espacio posible entre ellos. 
+
+align-items-center: Esta clase alinea los elementos hijos en el centro del contenedor a lo largo del eje transversal (generalmente, el eje vertical). 
+
+p-3: Esta es una utilidad de espaciado que añade un relleno uniforme (padding) de 3 unidades en todas las direcciones (superior, derecha, inferior e izquierda) al elemento. 
+-->
+  <header class="d-flex justify-content-between align-items-center p-3">
+  <!-- 
+  Cuando combinas d-flex y gap-3 en un mismo elemento, creas un contenedor que organiza sus hijos como elementos flexibles y les aplica un espaciado de 3 unidades entre ellos. 
+  -->
+    <div class="d-flex gap-3">
+    <!--bi: Este es el prefijo para la biblioteca de fuentes de iconos de Bootstrap. 
+bi-instagram: Esta es la clase específica dentro de la biblioteca de fuentes de Bootstrap que corresponde al icono de Instagram. 
+fs-5: Esta es una clase de utilidad de Bootstrap que se utiliza para establecer el tamaño de la fuente de los elementos. fs-5 aplica un tamaño de fuente predefinido que es el quinto en la escala de fs-1 a fs-6 (de más grande a más pequeño). -->
+      <a href="#"><i class="bi bi-instagram fs-5"></i></a>
+      <a href="#"><i class="bi bi-linkedin fs-5"></i></a>
+      <a href="#"><i class="bi bi-twitter fs-5"></i></a>
+    </div>
+    <div>
+      <img src="assets/logo.png"/>
+    </div>
+    <nav>
+    
+      <ul class="nav">
+        <li class="nav-item"><a href="#" class="nav-link text-dark">Nuestros clientes</a></li>
+        <li class="nav-item"><a href="#" class="nav-link text-dark">Quiénes somos</a></li>
+        <li class="nav-item"><a href="#" class="nav-link text-dark">Contacto</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+  <!--
+  La clase container-fluid le dice al elemento que debe ser un contenedor de ancho completo, sin importar el tamaño de la pantalla. 
+  El p-0 elimina todo el padding (relleno) de los lados del contenedor, haciendo que el contenido pegado a sus bordes no tenga ningún espacio adicional. 
+   -->
+    <div class="container-fluid p-0">
+    <!-- 
+     la clase img-fluid convierte una imagen en responsiva, escalándose con su elemento padre, mientras que w-100 establece el ancho del elemento al 100% de su contenedor. Combinadas (img-fluid w-100), la imagen será responsiva y ocupará todo el ancho de su contenedor, con max-width: 100% y height: auto para el escalado y width: 100% para el tamaño completo, respectivamente
+    -->
+      <img src="assets/imagen1200x400.png" class="img-fluid w-100" alt="Imagen grande">
+    </div>
+    <!-- 
+    container: Se utilizará como un contenedor que se centrará en la página y tendrá un ancho máximo sensible al tamaño de la pantalla. 
+    my-5: Tendrá un espacio de 3 rem (48px) tanto en la parte superior como en la inferior del elemento, lo que ayuda a separar el contenido de otros elementos. 
+    -->
+    <div class="container my-5">
+    <!-- 
+    para estructurar el contenido. row crea un contenedor para las columnas, g-4 aplica un margen (gutter) de 1rem (para la versión 5) o un padding (para la versión 4) entre las columnas, y text-justify alinea el texto a la izquierda y a la derecha, rellenando el espacio horizontal disponible. 
+    g-4: En Bootstrap 5, g-4 es una clase de espaciado que aplica un margen o "gutter" de 1rem (16px) a las columnas de la fila. En Bootstrap 4, la clase g-4 no existía; en su lugar, para aplicar espacios se usaba col-4 para definir el tamaño de la columna. 
+    -->
+      <div class="row g-4 text-justify">
+      <!--
+       una columna de tamaño medio (md) que ocupa la mitad del ancho (6 de 12) de una fila, tiene un fondo claro (bg-light), relleno de 4 unidades de medida (p-4), bordes redondeados (rounded) y una sombra sutil (shadow-sm). 
+       -->
+        <div class="col-md-6 bg-light p-4 rounded shadow-sm">
+          <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dicta quibusdam nemo dolorum vitae expedita repudiandae eligendi. Adipisci commodi praesentium omnis fuga exercitationem! Fuga nemo voluptates laudantium aut corporis alias ipsa! ipsum dolor sit amet, consectetur adipiscing elit. Phasellus vel risus eget nisl vehicula dictum.</p>
+          <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dicta quibusdam nemo dolorum vitae expedita repudiandae eligendi. Adipisci commodi praesentium omnis fuga exercitationem! Fuga nemo voluptates laudantium aut corporis alias ipsa! ipsum dolor sit amet, consectetur adipiscing elit. Phasellus vel risus eget nisl vehicula dictum.</p>
+        </div>
+        <div class="col-md-6 bg-light p-4 rounded shadow-sm">
+          <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dicta quibusdam nemo dolorum vitae expedita repudiandae eligendi. Adipisci commodi praesentium omnis fuga exercitationem! Fuga nemo voluptates laudantium aut corporis alias ipsa! ipsum dolor sit amet, consectetur adipiscing elit. Phasellus vel risus eget nisl vehicula dictum.</p>
+          <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dicta quibusdam nemo dolorum vitae expedita repudiandae eligendi. Adipisci commodi praesentium omnis fuga exercitationem! Fuga nemo voluptates laudantium aut corporis alias ipsa! ipsum dolor sit amet, consectetur adipiscing elit. Phasellus vel risus eget nisl vehicula dictum.</p>
+        </div>
+      </div>
+    </div>
+  </main>
+<!-- 
+ aplica el Flexbox para crear un contenedor con: d-flex para habilitar el modo Flexbox, justify-content-between para distribuir elementos espaciados en el eje horizontal, align-items-center para centrar los elementos en el eje vertical, p-4 para aplicar un padding interno, y border-top para añadir un borde superior a este contenedor. 
+ 
+-->
+  <footer class="d-flex justify-content-between align-items-center p-4 border-top">
+    <div class="d-flex gap-3">
+      <a href="#"><i class="bi bi-instagram"></i></a>
+      <a href="#"><i class="bi bi-linkedin"></i></a>
+      <a href="#"><i class="bi bi-twitter"></i></a>
+    </div>
+    <!--es una clase de utilidad que alinea el texto de un elemento al lado derecho (o al final en un contexto de escritura de derecha a izquierda) del contenedor -->
+    <div class="text-end">
+    <!-- 
+    margin 0
+    -->
+      <p class="m-0">Calle Licenciado Poza 31, Bilbao</p>
+      <p class="m-0">Tel: 944 39 50 62</p>
+    </div>
+  </footer>
+</body>
+</html>
