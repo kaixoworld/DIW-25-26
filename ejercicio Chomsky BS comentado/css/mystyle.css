@@ -1,0 +1,197 @@
+:root {
+    --primary-red: #c41e3a;
+    --dark-navy: #1a1f36;
+    --cream: #f5f1e8;
+    --gold: #d4af37;
+}
+
+body {
+    font-family: 'Georgia', serif;
+    overflow-x: hidden;
+}
+
+.hero-section {
+    background: var(--dark-navy);
+    color: white;
+    padding: 6.25em 0 5em;
+    position: relative;
+    overflow: hidden;
+}
+
+.badge-new {
+    background: var(--primary-red);
+    color: white;
+    padding: 0.625em 1.5625em;
+    border-radius: 1.5625em;
+    font-weight: bold;
+    display: inline-block;
+    margin-bottom: 1.25em;
+    font-family: 'Segoe UI', sans-serif;
+    letter-spacing: 0.0625em;
+}
+
+.cita-section {
+    background: var(--cream);
+    padding: 5em 0;
+    position: relative;
+}
+
+.cita-text {
+    font-size: 1.8em;
+    font-style: italic;
+    line-height: 1.6;
+    color: var(--dark-navy);
+    position: relative;
+    padding: 2.5em;
+}
+
+.cita-text::before {
+    content: '"';
+    font-size: 8em;
+    color: var(--primary-red);
+    opacity: 0.2;
+    position: absolute;
+    top: -0.25em;
+    left: 0;
+}
+
+.sobre-noam {
+    background: white;
+    padding: 5em 0;
+}
+
+.imagen-noam {
+    width: 12.5em;
+    height: 12.5em;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 0.3125em solid var(--gold);
+    box-shadow: 0 0.625em 1.875em rgba(0,0,0,0.2);
+}
+
+.temas-clave {
+    padding: 5em 0;
+    background: var(--cream);
+}
+
+.estilo-caja-tema {
+    background: white;
+    padding: 2.1875em;
+    border-radius: 0.625em;
+    border-left: 0.3125em solid var(--primary-red);
+    box-shadow: 0 0.625em 1.875em rgba(0,0,0,0.08);
+    margin-bottom: 1.875em;
+}
+
+.estilo-icono {
+    font-size: 2.5em;
+    color: var(--primary-red);
+    margin-bottom: 0.9375em;
+}
+
+.btn-primary-custom {
+    background: var(--primary-red);
+    border: none;
+    padding: 0.9375em 1.5em;
+    font-size: 1.2em;
+    font-weight: bold;
+    border-radius: 0.3125em;
+    font-family: 'Segoe UI', sans-serif;
+    box-shadow: 0 0.625em 1.5625em rgba(196,30,58,0.3);
+}
+
+.btn-primary-custom:hover {
+    background: #a01828;
+}
+
+.btn-secondary-custom {
+    background: transparent;
+    border: 0.125em solid white;
+    color: white;
+    padding: 0.9375em 1em;
+    font-size: 1.2em;
+    font-weight: bold;
+    border-radius: 0.3125em;
+    transition: all 0.3s ease;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+.btn-secondary-custom:hover {
+    background: white;
+    color: var(--dark-navy);
+}
+
+.opiniones {
+    background: var(--dark-navy);
+    color: white;
+    padding: 5em 0;
+}
+
+.opinion-card {
+    background: rgba(255,255,255,0.05);
+    padding: 1.875em;
+    border-radius: 0.625em;
+    border: 0.0625em solid rgba(255,255,255,0.1);
+    margin-bottom: 1.25em;
+    height: 100%;
+}
+
+.stars {
+    color: var(--gold);
+    font-size: 1.2em;
+    margin-bottom: 0.9375em;
+}
+
+.cta-section {
+    background:  var(--primary-red) ;
+    color: white;
+    padding: 5em 0;
+    text-align: center;
+}
+
+.book-details {
+    background: white;
+    padding: 3.75em 0;
+}
+
+.detail-item {
+    display: flex;
+    align-items: center;
+    padding: 1.25em;
+    background: var(--cream);
+    border-radius: 0.5em;
+    margin-bottom: 0.9375em;
+}
+
+.detail-icon {
+    font-size: 2em;
+    color: var(--primary-red);
+    margin-right: 1.25em;
+    width: 3.125em;
+}
+
+footer {
+    background: var(--dark-navy);
+    color: white;
+    padding: 3.125em 0 1.875em;
+}
+
+.section-title {
+    font-size: 2.8em;
+    font-weight: bold;
+    margin-bottom: 2.5em;
+    color: var(--dark-navy);
+    position: relative;
+    padding-bottom: 0.9375em;
+}
+
+.section-title::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 5em;
+    height: 0.25em;
+    background: var(--primary-red);
+}

@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Myth of American Idealism - Noam Chomsky</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/mystyle.css">
+</head>
+<body>
+    <!-- Hero Section: la clase hero-section es una convención utilizada en Bootstrap y en el diseño web en general para identificar y estilizar esa sección de bienvenida de una página, con el fin de crear una experiencia visual impactante y efectiva desde el primer momento -->
+    <section class="hero-section">
+    <!-- 
+    class="container" crea un contenedor de ancho fijo y responsive que sirve para centrar el contenido y aplicar márgenes en los lados a partir de ciertos tamaños de pantalla (breakpoints). A diferencia de container-fluid, que siempre ocupa el 100% del ancho, container se adapta a diferentes tamaños de pantalla, manteniendo un espacio a los lados para una mejor organización visual, especialmente en dispositivos grandes. 
+    -->
+        <div class="container">
+        <!-- 
+ La clase row establece el contenedor para las columnas (sistema de cuadrícula), mientras que align-items-center aplica utilidades de flexbox para alinear los elementos hijos (las columnas) verticalmente en el centro de esa fila. 
+        -->
+            <div class="row align-items-center">
+            <!-- 
+            define que un elemento debe ocupar 6 columnas de las 12 disponibles en el sistema de cuadrícula, pero solo en pantallas grandes (large) 
+            -->
+                <div class="col-lg-6">
+                <!-- crea una pequeña etiqueta visual, un insignia o "badge", que se utiliza para resaltar información, como indicar que algo es nuevo, o mostrar un estado-->
+                    <span class="badge-new">NUEVO LANZAMIENTO</span>
+                <!--Estilos: aplicamos al texto un tamaño de fuente grande (nivel 3 de encabezados de visualización), una tipografía en negrita y un margen inferior de 1.5rem (1.5 veces el tamaño de fuente del elemento HTML). -->   
+                    <h1 class="display-3 fw-bold mb-4">The Myth of American Idealism</h1>
+                <!--  el elemento HTML será estilizado como un encabezado de tamaño 3 (usando la clase h3 para el tamaño de la fuente) y tendrá un margen inferior de 4 unidades -->    
+                    <h2 class="h3 mb-4">Cómo la política exterior de EE.UU. pone en peligro al mundo</h2>
+                <!-- La clase lead hace que el texto sea más grande y llamativo, como un subtítulo, mientras que mb-4 es una clase de espaciado que crea margen en la parte inferior del elemento.  -->    
+                    <p class="lead mb-4">El análisis más devastador y provocador de Noam Chomsky sobre el imperio estadounidense y su impacto global</p>
+                    <div class="mb-4">
+                        <p class="mb-2"><strong>Por Noam Chomsky y Nathan J. Robinson</strong></p>
+                    <!-- text-white-50 en Bootstrap establece el color del texto en blanco y lo hace semitransparente con una opacidad reducida al 50%-->   
+                        <p class="text-white-50">Publicado en octubre 2024</p>
+                    </div>
+                    <!-- -->
+                    <div class="d-flex gap-3 flex-wrap">
+                        <button class="btn btn-primary-custom">
+                        <!--me-2: aplica un margen en el borde de finalización (margin-end) de un elemento, con un tamaño de 2-->
+                            <i class="fas fa-book me-2"></i>Comprar Ahora
+                        </button>
+                        <button class="btn btn-secondary-custom">
+                            <i class="fas fa-download me-2"></i>Muestra Gratuita
+                        </button>
+                    </div>
+                </div>
+                
+                <!-- definimos un elemento en Bootstrap que ocupa la mitad del ancho en pantallas grandes (col-lg-6), se alinea horizontalmente al centro (text-center), tiene un margen superior de 5 unidades en todas las pantallas (mt-5), y no tiene margen superior en pantallas grandes (mt-lg-0). -->
+                <div class="col-lg-6 text-center mt-5 mt-lg-0">
+                    <img src="assets/portada.jpg" alt="Book Cover" >
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- cita Section -->
+    <section class="cita-section">
+        <div class="container">
+            <div class="row justify-content-center">
+            <!-- class="col-lg-10" en Bootstrap significa que un elemento debe ocupar 10 de las 12 columnas disponibles del sistema de cuadrícula de Bootstrap en pantallas grandes -->
+                <div class="col-lg-10">
+                    <div class="cita-text text-center">
+                        Un recuento exhaustivo y devastador de la hipocresía estadounidense en la política exterior. Una lectura esencial para comprender el mundo actual.
+                    </div>
+                    <!-- text-muted: Atenúa el texto, haciendo que sea visualmente menos prominente o más "silencioso". 
+                        fs-5: Establece el tamaño de la fuente a un valor predefinido por Bootstrap, en este caso, el quinto de una escala de 1 a 6 (donde 1 es el más grande), para ajustar el tamaño del texto. -->
+                    <p class="text-center text-muted fs-5 mt-3">— Foreign Policy Magazine</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- sobre noam chomsky -->
+    <section class="sobre-noam">
+        <div class="container">
+            <div class="row align-items-center">
+            <!-- definimos el diseño de un elemento como una columna de ancho fijo de 4 unidades (sobre 12) para pantallas grandes (a partir de 992px), centramos el texto horizontalmente, añadimos un margen inferior de 4 unidades en todos los tamaños de pantalla y lo eliminamos para pantallas grandes (992px en adelante)-->
+                <div class="col-lg-4 text-center mb-4 mb-lg-0">
+                    <img src="assets/NoamChomsky.png" alt="Noam Chomsky" class="imagen-noam">
+                </div>
+                
+                <div class="col-lg-8">
+                    <h2 class="h1 fw-bold mb-4">Sobre Noam Chomsky</h2>
+                    <p class="lead mb-3">Lingüista, filósofo y activista político considerado uno de los intelectuales más influyentes del siglo XXI.</p>
+                    <p class="mb-3">Profesor emérito del MIT y actual Profesor Laureado de Lingüística en la Universidad de Arizona, Chomsky ha dedicado su vida a desenmascarar las estructuras de poder y las narrativas imperialistas.</p>
+                    <p class="mb-3">Autor de más de 150 libros sobre lingüística, filosofía, política y medios de comunicación. Sus trabajos han sido traducidos a docenas de idiomas y continúan siendo referencias fundamentales para entender la política internacional contemporánea.</p>
+                    <div class="mt-4">
+                        <span class="badge bg-danger me-2 mb-2 py-2 px-3">100+ Libros Publicados</span>
+                        <span class="badge bg-danger me-2 mb-2 py-2 px-3">Activista desde 1960</span>
+                        <span class="badge bg-danger mb-2 py-2 px-3">Profesor Emérito MIT</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Temas clave -->
+    <section class="temas-clave">
+        <div class="container">
+        <!-- definimos un título de sección y centra el texto horizontalmente-->
+            <h2 class="section-title text-center">Temas Principales del Libro</h2>
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="estilo-caja-tema">
+                        <i class="fas fa-globe-americas estilo-icono"></i>
+                        <h4 class="fw-bold mb-3">Imperialismo Moderno</h4>
+                        <p>Un análisis detallado de cómo Estados Unidos ha ejercido su poder global desde la Segunda Guerra Mundial hasta hoy, desmontando la narrativa de "policía mundial benevolente".</p>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="estilo-caja-tema">
+                        <i class="fas fa-bomb estilo-icono"></i>
+                        <h4 class="fw-bold mb-3">Intervenciones Militares</h4>
+                        <p>Examina las intervenciones estadounidenses en Oriente Medio, América Latina y Asia, revelando los verdaderos intereses detrás de las "misiones humanitarias".</p>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="estilo-caja-tema">
+                        <i class="fas fa-scale-balanced estilo-icono"></i>
+                        <h4 class="fw-bold mb-3">Doble Estándar</h4>
+                        <p>Documenta la hipocresía sistemática en la aplicación del derecho internacional y los derechos humanos según los intereses geopolíticos.</p>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="estilo-caja-tema">
+                        <i class="fas fa-newspaper estilo-icono"></i>
+                        <h4 class="fw-bold mb-3">Manipulación Mediática</h4>
+                        <p>Revela cómo los medios de comunicación manufacturan el consentimiento público para políticas que benefician a las élites del poder.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    
+
+    <!-- Opiniones -->
+    <section class="opiniones">
+        <div class="container">
+            <h2 class="text-center fw-bold mb-5 text-white">Lo Que Dicen los Críticos</h2>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="opinion-card">
+                        <div class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+                        <p class="fst-italic mb-3">"Una obra maestra de análisis político. Chomsky y Robinson ofrecen una síntesis brillante de décadas de investigación sobre la política exterior estadounidense."</p>
+                        <p class="fw-bold mb-0 text-warning">— The Guardian</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="opinion-card">
+                        <div class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+                        <p class="fst-italic mb-3">"Lectura obligatoria para cualquiera que quiera entender las verdaderas dinámicas del poder global. Incisivo, documentado y profundamente revelador."</p>
+                        <p class="fw-bold mb-0 text-warning">— Le Monde Diplomatique</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="opinion-card">
+                        <div class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+                        <p class="fst-italic mb-3">"Chomsky ha sido vindicado una y otra vez. Este libro recopila medio siglo de análisis lúcido sobre el imperialismo estadounidense."</p>
+                        <p class="fw-bold mb-0 text-warning">— Jacobin Magazine</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+  
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+             <div class="text-center">
+                <p class="mb-0">&copy; 2025 Seguimos practicando Bootstrap</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
